@@ -1,0 +1,462 @@
+/* ==============================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ebe6e1;
+    color: rgb(35, 30, 30);
+    overflow-x: hidden;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 4%;
+
+    background-color: #ebe6e1;
+}
+
+
+/* Medium logo */
+.medium {
+    color: black;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 28px;
+
+    letter-spacing: -1px;
+
+    margin-right: auto;
+}
+
+/* Right side of header */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* ==============================
+   MENU BUTTON
+================================= */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+.menu-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.menu-toggle span {
+    width: 20px;
+    height: 2px;
+
+    background-color: black;
+
+    border-radius: 10px;
+
+    transition: transform 0.25s ease,
+                opacity 0.25s ease;
+}
+
+
+/* ==============================
+   NAVIGATION MENU
+================================= */
+
+
+/* Show menu */
+
+.nav-menu.active {
+    display: flex;
+}
+
+
+/* Menu links */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    padding: 10px 12px;
+
+    transition: opacity 0.2s ease;
+}
+
+.nav-menu a:hover {
+    opacity: 0.6;
+}
+
+
+
+/* ==============================
+   GET STARTED
+================================= */
+
+.button {
+    width: 107px;
+    height: 38px;
+
+    border: none;
+    border-radius: 65px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+.button:active {
+    transform: scale(0.97);
+}
+
+
+/* ==============================
+   HERO
+================================= */
+
+.hero-section {
+    position: relative;
+
+    width: 100%;
+    min-height: calc(100vh - 75px);
+
+    border-top: 1px solid black;
+
+    padding-bottom: 60px;
+
+    overflow: hidden;
+}
+
+
+/* Small line */
+
+.rub {
+    display: none;
+}
+
+
+/* Main heading */
+
+.hero-left {
+    width: 60%;
+
+    margin-left: 5%;
+    padding-top: 95px;
+
+    font-weight: 600;
+
+    font-size: clamp(55px, 8.5vw, 110px);
+
+    line-height: 0.92;
+
+    letter-spacing: -5px;
+
+    color: rgb(35, 30, 30);
+}
+
+
+/* Description */
+
+.p {
+    width: min(550px, 50%);
+
+    margin-left: 5%;
+    margin-top: 35px;
+
+    font-size: clamp(18px, 2vw, 25px);
+
+    line-height: 1.35;
+}
+
+
+/* ==============================
+   START READING BUTTON
+================================= */
+
+.btn {
+    width: 215px;
+
+    margin-left: 5%;
+    margin-top: 28px;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 70px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+
+/* ==============================
+   HERO IMAGE
+================================= */
+
+.hero-image {
+    position: absolute;
+
+    right: 4%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: min(38vw, 500px);
+    height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+.footer {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 6px 18px;
+
+    padding: 30px 5%;
+
+    border-top: 1px solid black;
+
+    background-color: #ebe6e1;
+}
+
+
+/* Footer links */
+
+.footer a {
+    color: rgb(92, 92, 92);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    padding: 5px 0;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+}
+
+.footer a:hover {
+    color: black;
+}
+
+/* Remove old individual margins */
+
+.help,
+.status,
+.about,
+.career,
+.press,
+.blog,
+.privacy,
+.rules,
+.terms,
+.text {
+    margin: 0;
+    font-size: 14px;
+
+}
+
+
+/* ==============================
+   TABLET
+================================= */
+  
+.menu-toggle:hover {
+    background-color: rgba(49, 47, 47, 0.08);
+}
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .header {
+        min-height: 65px;
+        padding: 0 4%;
+    }
+
+
+    .medium {
+        font-size: 26px;
+    }
+
+
+    .button {
+        width: 95px;
+        height: 36px;
+
+        font-size: 13px;
+    }
+}
+@media (min-width: 600px) {
+
+    .hero-left {
+        width: 65%;
+
+        font-size: clamp(55px, 9vw, 85px);
+    }
+
+    .p {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .hero-image {
+        width: 38vw;
+        height: 65vh;
+    }
+}
+
+
+
+
+/* ==============================
+   VERY SMALL PHONES
+================================= */
+
+@media (max-width: 400px) {
+
+    .medium {
+        font-size: 22px;
+    }
+
+    .button {
+        width: 88px;
+
+        font-size: 11px;
+    }
+
+
+    .hero-left {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+
+    .p {
+        font-size: 17px;
+    }
+
+
+    .btn {
+        width: 180px;
+
+        font-size: 16px;
+    }
+
+
+    .hero-image {
+        width: 90%;
+        height: 360px;
+    }
+
+
+    .footer {
+        gap: 3px 12px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+}
