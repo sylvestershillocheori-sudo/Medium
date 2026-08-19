@@ -93,7 +93,7 @@ body {
     border-radius: 10px;
 
     transition: transform 0.25s ease,
-                opacity 0.25s ease;
+        opacity 0.25s ease;
 }
 
 
@@ -361,34 +361,34 @@ body {
 /* ==============================
    TABLET
 ================================= */
-  
+
 .menu-toggle:hover {
     background-color: rgba(49, 47, 47, 0.08);
 }
 
 
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .header {
-        min-height: 65px;
-        padding: 0 4%;
-    }
-
-
-    .medium {
-        font-size: 26px;
-    }
-
-
-    .button {
-        width: 95px;
-        height: 36px;
-
-        font-size: 13px;
-    }
+.nav-menu.active {
+    display: flex;
 }
+
+.header {
+    min-height: 65px;
+    padding: 0 4%;
+}
+
+
+.medium {
+    font-size: 26px;
+}
+
+
+.button {
+    width: 95px;
+    height: 36px;
+
+    font-size: 13px;
+}
+
 @media (min-width: 600px) {
 
     .hero-left {
